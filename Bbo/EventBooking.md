@@ -98,7 +98,7 @@ Untuk dapat mengakses API anda harus memiliki API key yang anda dapatkan dari BB
 ### `event`
 Menampilkan list event
 
-##### Path
+##### URL
 `GET` `http://api.test.bbo.co.id/event`
 
 ##### Parameters
@@ -151,7 +151,7 @@ ondate?: Filter pada tanggal
 ### `event_detail`
 Melihat detail event
 
-##### Path
+##### URL
 `GET` `http://api.test.bbo.co.id/event_detail/{id: ID dari event yang ingin dilihat}`
 
 ##### Response Example
@@ -245,7 +245,7 @@ Daftar status pada index object response `list.status`:
 - `3`, sudah di booking.
 
 
-##### Path
+##### URL
 `POST` `test.api.bbo.co.id/event_seat`
 
 ##### FormData
@@ -372,7 +372,7 @@ column_id?: ID column|ID row 2
 ### `event_order`
 List order tiket event yang telah dibeli member
 
-##### Path
+##### URL
 `GET` `http://api.test.bbo.co.id/event_order`
 ##### Parameters
 ```
@@ -424,7 +424,7 @@ status?: 0=registered, 1=approved, 2=canceled, 3=sudah dipakai, 4=tiket expired,
 ### `event_order_detail`
 Detail order tiket event yang telah dibeli member
 
-##### Path
+##### URL
 `GET` `http://api.test.bbo.co.id/event_order_detail/{id: ID Order Tiket}`
 
 ##### Response Example
@@ -497,7 +497,7 @@ Detail order tiket event yang telah dibeli member
 ### `event_order_cancellation`
 Cancel order tiket event yang telah dibeli member
 
-##### Path
+##### URL
 `GET` `http://api.test.bbo.co.id/event_order_cancellation/{id: ID Order Tiket}`
 
 ##### Response Example
@@ -514,5 +514,5 @@ Cancel order tiket event yang telah dibeli member
 ### `voucher_check`
 Untuk mengecek apakah voucher valid atau tidak jika pada `event_detail` `use_code` bernilai `1` (satu)
 
-##### Path
+##### URL
 `GET` `http://api.test.bbo.co.id/voucher_check`
