@@ -11,7 +11,7 @@ Untuk dapat mengakses API anda harus memiliki API key yang anda dapatkan dari BB
 ##### Collecting Data Example
 ``` js
 (async () => {
-	const response = await fetch('http://test.api.bbo.co.id/event', {
+	const response = await fetch('http://api.test.bbo.co.id/event', {
 		method: 'GET',
 		headers: {
 			'Api-Key': 'someRandomGeneratedString',
@@ -25,7 +25,7 @@ Untuk dapat mengakses API anda harus memiliki API key yang anda dapatkan dari BB
 ##### Storing Data Example
 ``` js
 (async () => {
-	const response = await fetch(`http://test.api.bbo.co.id/event/${eventId}`, {
+	const response = await fetch(`http://api.test.bbo.co.id/event/${eventId}`, {
 		method: 'POST',
 		headers: {
 			'Api-Key': 'someRandomGeneratedString',
