@@ -83,7 +83,7 @@ Untuk dapat mengakses API anda harus memiliki API key yang anda dapatkan dari BB
 - Kemudian buat request ke `/event_detail/{id}` untuk melihat apakah `status` event bisa di booking atau tidak.
 - Pilih tipe tiket dengan index `use_code` bernilai `1` (satu) yang ingin anda beli di index `price_type`.
 - Untuk mengetahui tipe undangan anda valid atau tidak silahkan buat request ke `/voucher_ticket` dengan parameter yang diperlukan.
-- Jika event tersebut bisa dibeli, buat request ke `/event_booking/{id}` dengan parameter dan form-data yang diperlukan.
+- Jika event tersebut bisa dibeli, buat request ke `/event_booking/{id}` dengan parameter dan form-data yang diperlukan. Pastikan juga `payment_id` untuk tipe ini diisi '4'.
 
 ##### Seated Ticket
 - Buat request ke `/event` untuk mendapat ID event yang anda cari.
@@ -426,6 +426,12 @@ Melihat detail event
 
 ### `event_seat`
 Melihat semua seat yang ada pada event jika `use_seat` sama dengan `1` (satu).
+
+Daftar status pada index object response `list.status`:
+- `1`, bisa dibooking.
+- `2`, disabled. 
+- `3`, sudah di booking.
+
 
 ##### Path
 `POST` `test.api.bbo.co.id/event_seat`
@@ -1074,7 +1080,7 @@ ondate: Tanggal yang diambil dari `price_type`.`list`.`ondate` di `event_detail`
 ----------
 
 ### `event_booking`
-Melakukan booking tiket event GET:{"id":"ID dari event"}
+Melakukan booking tiket event
 
 ##### FormData
 ```
