@@ -76,21 +76,21 @@ Untuk dapat mengakses API anda harus memiliki API key yang anda dapatkan dari BB
 - Buat request ke `/event` untuk mendapat ID event yang anda cari.
 - Kemudian buat request ke `/event_detail/{id}` untuk melihat apakah `status` event bisa di booking atau tidak.
 - Pilih tipe tiket yang ingin anda beli di index `price_type`.
-- Jika event tersebut bisa dibeli, buat request ke `/event_booking/{id}` dengan parameter dan form-data yang diperlukan.
+- Jika tiket event tersebut bisa dibeli, buat request ke `/event_booking/{id}` dengan parameter dan form-data yang diperlukan.
 
 ##### Invitation Ticket
 - Buat request ke `/event` untuk mendapat ID event yang anda cari.
 - Kemudian buat request ke `/event_detail/{id}` untuk melihat apakah `status` event bisa di booking atau tidak.
 - Pilih tipe tiket dengan index `use_code` bernilai `1` (satu) yang ingin anda beli di index `price_type`.
 - Untuk mengetahui tipe undangan anda valid atau tidak silahkan buat request ke `/voucher_ticket` dengan parameter yang diperlukan.
-- Jika event tersebut bisa dibeli, buat request ke `/event_booking/{id}` dengan parameter dan form-data yang diperlukan. Pastikan juga `payment_id` untuk tipe ini diisi '4'.
+- Jika tiket event tersebut bisa dibeli, buat request ke `/event_booking/{id}` dengan parameter dan form-data yang diperlukan. Pastikan juga `payment_id` untuk tipe ini diisi '4'.
 
 ##### Seated Ticket
 - Buat request ke `/event` untuk mendapat ID event yang anda cari.
 - Kemudian buat request ke `/event_detail/{id}` untuk melihat apakah `status` event bisa di booking atau tidak.
 - Pilih tipe tiket dengan index `use_seat` bernilai `1` (satu) yang ingin anda beli di index `price_type`.
 - Untuk mengetahui posisi yang belum terisi, buat request ke `/event_seat` dengan parameter yang diperlukan.
-- Jika event tersebut bisa dibeli, buat request ke `/event_booking/{id}` dengan parameter dan form-data yang diperlukan.
+- Jika tiket event tersebut bisa dibeli, buat request ke `/event_booking/{id}` dengan parameter dan form-data yang diperlukan.
 
 ## List Route
 
