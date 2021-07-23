@@ -29,6 +29,7 @@ Untuk dapat mengakses API anda harus memiliki API key yang anda dapatkan dari BB
 		method: 'POST',
 		headers: {
 			'Api-Key': 'someRandomGeneratedString',
+			'Content-Type': 'application/x-www-form-urlencoded',
 		},
 		body: URLSearchParams({
 			buyer_name: 'John Doe',
