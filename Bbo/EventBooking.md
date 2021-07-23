@@ -107,7 +107,6 @@ page?: Nomor halaman yang ingin dilihat
 sort?: latest|popular
 location_id?: Filter ID lokasi event
 ondate?: Filter pada tanggal
-
 ```
 
 ##### Response Example
@@ -256,7 +255,7 @@ ondate: Tanggal yang diambil dari `price_type`.`list`.`ondate` di `event_detail`
 ```
 
 ##### Response Example
-```
+``` json
 {
     "ok": "1",
     "status_code": "200",
